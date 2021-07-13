@@ -1,0 +1,8 @@
+<div class="form-group">
+    <label>List of Users</label>
+    <ul>
+        <li *ngFor="let user of users" [value]="user.userName">
+            {{user.userName}}
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,13 @@
+<form #quizForm="ngForm" (ngSubmit)="setQuiz()" autocomplete="off">
+    <h2 class="text-center text-primary">New Event </h2>
+    <div class="form-group">
+        <input type="text" class="form-control" name="quiz" 
+        [(ngModel)]="quizModel.text" placeholder="Quiz">
+    </div>
+    
+    <div class="form-group text-center">
+        <button class="btn btn-info mr-2" type="submit">Enter</button>
+        <button  class="btn btn-success " routerLink="/quiz-menu" routerLinkActive='active'>Back</button>
+    </div>
+
+</form>

@@ -1,0 +1,18 @@
+<table>
+    <thead>
+        <th>User Name</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>
+                <li>
+                    {{user.userName}}
+                </li>
+            </td>
+            <td>
+                <button (click)="editUser()" class="btn-warning" >Edit</button>
+            </td>
+           
+        </tr>
+    </tbody>
+</table>

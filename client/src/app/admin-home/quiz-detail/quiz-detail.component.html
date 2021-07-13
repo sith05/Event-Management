@@ -1,0 +1,9 @@
+<div class="form-group">
+    <label>List of Quiz</label>
+    <ul>
+        <li *ngFor="let quiz of quizzes" [value]="quiz.text">
+            {{quiz.text}}
+        </li>
+    </ul>
+</div>
+<button  class="btn btn-success btn-lg mr-2" routerLink="/quiz-menu" routerLinkActive='active'> Back</button>
